@@ -1,9 +1,14 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
 
   <!-- Nav Bar -->
@@ -17,66 +22,85 @@
   </nav>
 
   <!-- Main Content -->
-  <main>
-    <body>
-      <section class="content">
-        <h2>About Me</h2>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" />
-        <p>
-          I am a software engineer with a passion for creating innovative
-          solutions to complex problems. I am currently working on a project to
-          develop a website for companies with a need for AI.
-        </p>
-      </section>
+  <body>
+    <div id="page-container">
+      <main>
+        <section class="content">
+          <div class="about-me-container">
+            <div class="about-me-text-container">
+              <h2>About Me</h2>
+              <p>
+                I am a software engineer with a passion for creating innovative
+                solutions to complex problems. I am currently working on a
+                project to develop a website for companies with a need for AI.
+              </p>
+              <p>
+                I have been coding for about a few weeks now and I am excited to
+                learn more about the world of coding
+              </p>
+              <p>
+                blah blah blah blah blah blah blah blah blah blah blah blah blah
+              </p>
+            </div>
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Profile Picture"
+              class="portrait"
+            />
+          </div>
+        </section>
 
-      <section class="projects">
-        <h2>Projects</h2>
+        <section class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/JulianLuczywo/julianluczywo.github.io"
+                >My first computer program</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/JulianLuczywo/git_practice"
+                >The Analytical Engine</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/julianluczywo/project-3"
+                >The Ada programming language</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="skills">
+          <div class="skills-container">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contact">
+          <h2>Contact</h2>
+          <p>Email: julian.luczywo0@gmail.com</p>
+          <p>Phone: 0000000000</p>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 Julian Luczywo</p>
         <ul>
+          <li><a href="https://github.com/julianluczywo">Github</a></li>
           <li>
-            <a href="https://github.com/JulianLuczywo/julianluczywo.github.io"
-              >My first computer program</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/JulianLuczywo/git_practice"
-              >The Analytical Engine</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/julianluczywo/project-3"
-              >The Ada programming language</a
-            >
+            <a href="https://www.linkedin.com/in/julianluczywo/">LinkedIn</a>
           </li>
         </ul>
-      </section>
-
-      <section class="content">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-        </ul>
-      </section>
-
-      <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: julian.luczywo0@gmail.com</p>
-        <p>Phone: 0000000000</p>
-      </section>
-    </body>
-
-    <!-- Footer -->
-    <footer>
-      <p>Copyright 2025 Julian Luczywo</p>
-      <ul>
-        <li><a href="https://github.com/julianluczywo">Github</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/julianluczywo/">LinkedIn</a>
-        </li>
-      </ul>
-    </footer>
-  </main>
+      </footer>
+    </div>
+  </body>
 </html>

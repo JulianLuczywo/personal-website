@@ -14,15 +14,20 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  z-index: 2;
+  padding: 50px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  flex: 1;
 }
 
 nav {
@@ -45,10 +50,15 @@ nav h1 {
 }
 
 .nav-links {
-  display: flex;
+  display: inline-flex;
   list-style: none;
   margin: 0;
+  margin-right: 60px;
   padding: 10;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .nav-links li {
@@ -63,6 +73,10 @@ nav h1 {
 
 .nav-links a:hover {
   color: #899878;
+}
+
+section {
+  display: block;
 }
 
 .title {
@@ -84,12 +98,54 @@ nav h1 {
   margin: 0;
 }
 
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-text-container {
+  width: 80%;
+}
+
+.about-me-container p {
+  text-align: justify;
+}
+
+.portrait {
+  width: 300px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+.portrait:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
 .projects {
   margin-top: 50px;
+  padding: 15px;
 }
 
 .projects ul {
-  list-style: none;
+  list-style: square;
   margin: 0;
   padding: 0;
 }
@@ -105,7 +161,25 @@ nav h1 {
 }
 
 .projects li a:hover {
-  color: #000;
+  color: #899878;
+}
+
+.skills {
+  padding: 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .contact {
@@ -117,11 +191,30 @@ nav h1 {
   margin: 0;
 }
 
+i {
+  margin-right: 10px;
+  font-size: 30px;
+  gap: 20px;
+  color: #121113;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+i:hover {
+  color: #899878;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 footer {
   background-color: #000;
-  color: #fff;
-  padding: 20px;
+  color: #efeee7;
+  padding: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 footer ul {
@@ -153,14 +246,44 @@ footer ul li a:hover {
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
+    /* display: none; */
+    flex-direction: row;
     align-items: center;
     margin: 0;
+    margin-right: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    position: static;
+    width: 50%;
   }
 
   .nav-links li {
     margin: 10px 0;
     text-align: center;
+  }
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me-text-container {
+    width: 100%;
+  }
+  .projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .skills-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
